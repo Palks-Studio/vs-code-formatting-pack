@@ -126,7 +126,7 @@ Les fichiers `.mp4` présents dans ce dossier (convert_lf.mp4, indent_clean.mp4,
 - Documentation complète : INSTALL, README technique, README commercial  
 - Exemples avant/après, vidéos de démonstration, support Discord
 
-**Version complète disponible ici**
+**Version complète disponible ici**  
 - Gumroad : https://palks.gumroad.com  
 - Itch.io : http://palks-studio.itch.io  
 - Ko-fi : https://ko-fi.com/palksstudio
@@ -144,12 +144,10 @@ Les scripts de formatage (`clean.py`, `convert.py`, `space.py`) ne modifient pas
 Avant toute modification, un dossier `_backups/` est créé pour sauvegarder les fichiers d’origine.
 
 **À propos du formatage Python**
-
 Le formatage automatique Python via autopep8 ne fonctionne que si tu exécutes la tâche correspondante dans VS Code (Menu “Exécuter une tâche…”).
 Cette action ne s’applique qu’au fichier Python actuellement ouvert, jamais à l’ensemble du projet.
 
 **Reindentation manuelle (Ctrl + A puis Ctrl + R)**
-
 Applique une réindentation uniquement sur le fichier actif (`HTML`, `CSS`, `JS`, `JSON`, etc.)
 Exception : les fichiers `.py` ne sont pas réindentés par cette action — ils utilisent autopep8 à la place.
 
@@ -174,8 +172,7 @@ Toute revente, redistribution ou modification publique sans autorisation préala
 L’usage personnel et professionnel est autorisé.
 
 **Palks Studio**
-Créateur d’outils utiles et autonomes : scripts, templates et bases prêtes à l’emploi.
-Simplicité, clarté, efficacité.
+Créateur indépendant d’outils digitaux utiles et autonomes.
 
 - GitHub : https://github.com/Palks-Studio  
 - Gumroad : https://palks.gumroad.com  
