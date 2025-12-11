@@ -23,18 +23,14 @@
   </a>
 </p>
 
-**All documentation, scripts, and functions are fully in English.**
-Only the demo videos show French system elements (VS Code tabs, terminal messages), because they depend on my OS language.
-
 # VS Code – Formatting Pack (Lite Version)
 
 ---
 
-### Version 1.1 – October 2025
+### Version 1.1 – December 2025
 
-**Previous release** Version 1.0 (October 2025) – Initial public demo on GitHub, later replaced by this unified standalone version.
-This update consolidates both French and English documentation, removes all Git traces, and ensures a fully standalone structure.
-Previous GitHub demo versions have been cleaned and replaced with this unified, verified release.
+This update improves the public preview, refines the documentation,
+and aligns the structure with the commercial edition.
 
 ---
 
@@ -81,7 +77,7 @@ VSCode_Formatting_Pack/ (Lite Version)
         ├── convert_lf.mp4       ← CRLF files automatically converted to LF
         ├── indent_clean.mp4     ← Broken indentation/margins fixed instantly
         ├── indent_python.mp4    ← Badly indented Python file auto-corrected
-        ├── reindent.mp4         ← automatic file reindent after shifting a single line
+        ├── backup.mp4           ← demonstrates automatic file backup on each save (Ctrl+S) and how to restore a deleted file from the backup folder
         └── space_clean.mp4      ← Broken file analyzed + margins auto-cleaned
 ```
 
@@ -124,6 +120,7 @@ The `.mp4` files in this folder (convert_lf.mp4, indent_clean.mp4, etc.) are int
   - `clean.py` → cleans all files (removes extra margins + deletes blank lines only if 3 or more)  
   - `convert.py` → converts CRLF → LF across the workspace  
   - `space.py` → read-only scan (detects extra margins, tabs and blank lines without modifying files)  
+  - `backup.py` → creates an automatic timestamped backup on every save (Ctrl+S)
 
 - VS Code fully configured:  
 
@@ -153,14 +150,15 @@ They can process all files located at the root of the project, for the following
 | `convert.py` | Converts all line endings to **LF (Unix)**                             |
 | `space.py`   | Scans files and detects **unnecessary margins or blank areas** |
 | `clean.py`   | Automatically removes **extra margins and unnecessary blank lines**     |
+| `backup.py`  | Creates a timestamped backup in `.backups/` on every save (Ctrl+S) |
 
-Before any modification is applied, a `_backups/` folder is automatically created to store the original files safely.
+Before any modification is applied, a `.backups/` folder is automatically created.
 
 **About Python formatting**
 Automatic Python formatting with autopep8 only works when the corresponding task is manually executed in VS Code (menu “Run Task…”).
 This action only applies to the currently active Python file — it never formats the entire project.
 
-**Manual reindentation (Ctrl + A then Ctrl + R)**
+**Manual reindentation (Ctrl + A then Alt + R)**
 This command reindents only the currently active file (`HTML`, `CSS`, `JS`, `JSON`, etc.).
 Exception: Python files are not reindented using this method — they rely on autopep8 instead.
 
