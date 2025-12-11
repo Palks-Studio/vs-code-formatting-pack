@@ -1,4 +1,5 @@
-VSCode_Automatic_Formatting_Pack/
+```
+VSCode_Formatting_Pack/
 │
 ├── .vscode/
 │   ├── extensions.json                 ← Local deactivation of extensions (Prettier, RunOnSave)
@@ -6,7 +7,7 @@ VSCode_Automatic_Formatting_Pack/
 │   ├── settings.json                   ← Full VS Code configuration (indentation, LF, UTF-8, comfort)
 │   ├── keybindings.json                ← Shortcuts: Alt + M (minimap), Alt + R (reindent)
 │   └── tasks.json                      ← Tasks:
-│                                           - Python Formatting + Margin Cleaning (Autopep8 + Margin Cleanup)
+│                                           - Python Formatting + Margin Cleaning (autopep8 + Margin Cleanup)
 │                                           - Margin Cleaning (clean.py)
 │                                           - Margin Detection (space.py)
 │                                           - CRLF → LF Conversion (convert.py)
@@ -14,6 +15,7 @@ VSCode_Automatic_Formatting_Pack/
 ├── clean.py                            ← General cleanup (spaces, blank lines, quotes, normalization)
 ├── convert.py                          ← Convert all CRLF to LF across the project
 ├── space.py                            ← Detect unnecessary margins (extra spaces + blank lines)
+├── backup.py                           ← Creates timestamped per-file backups on each save (no extension required)
 │
 ├── LICENSE.txt                         ← Palks Studio Proprietary License
 ├── INSTALL.md                          ← Installation & usage guide
@@ -27,5 +29,6 @@ VSCode_Automatic_Formatting_Pack/
         ├── convert_lf.mp4              ← CRLF files automatically converted to LF
         ├── indent_clean.mp4            ← Broken indentation/margins fixed instantly
         ├── indent_python.mp4           ← Badly indented Python file auto-corrected
-        ├── reindent.mp4                ← automatic file reindent after shifting a single line
+        ├── backup.mp4                  ← demonstrates automatic file backup on each save (Ctrl+S) and how to restore a deleted file from the backup folder
         └── space_clean.mp4             ← Broken file analyzed + margins auto-cleaned
+```
