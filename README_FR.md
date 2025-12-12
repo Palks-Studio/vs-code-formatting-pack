@@ -25,58 +25,59 @@
 
 # VS Code – Pack de Formatage (Version Lite)
 
----
+**Version 1.1 — Démo publique**
 
-### Version 1.1 – Décembre 2025
+Un aperçu léger et **en lecture seule** du Pack de Formatage VS Code par **Palks Studio**.
 
-Cette mise à jour améliore la pré-version publique, affine la documentation
-et aligne la structure avec l’édition commerciale.
+Cette version Lite fournit un environnement **passif et non destructif**,
+conçu pour présenter la philosophie et la structure de la version complète,
+sans modifier aucun fichier.
 
----
-
-Un environnement propre et prêt à l’emploi pour Visual Studio Code, qui garde vos fichiers cohérents, correctement indentés et organisés — sans dépendre de Prettier, d’extensions externes ou de scripts personnalisés par projet.
-
-Ce pack contient la version publique de démonstration.
-La version complète (avec scripts prêts à l’emploi : clean.py, convert.py, space.py, automatisations, guide d’installation, démos…) est disponible sur Gumroad, Itch ou Ko-Fi.
-
-## Ce que fait ce pack :
-
-- Maintient automatiquement un code propre, aligné et cohérent
-- Fonctionne avec Python, HTML, CSS, JS et JSON
-- Normalise l’indentation, les marges, les fins de ligne (CRLF → LF) et l’encodage UTF-8
-- Ajoute des raccourcis utiles et des tâches VS Code :
-  - Alt + R → Ré-indente instantanément tout le fichier (ou un bloc sélectionné)
-    (Astuce : faites Ctrl + A avant pour tout sélectionner)
-  - Alt + M → Afficher / masquer la mini-carte
-  - Auto-format optionnel (Python uniquement : autopep8 + nettoyage des marges)
+Aucun formatage.
+Aucun nettoyage.
+Aucune automatisation.
 
 ---
 
 ## Structure (Version publique)
 
 ```
-VSCode_Pack_Formatage/ (Lite Version)
-├── README.md                    ← Documentation principale (publique)
-├── LICENSE.txt                  ← Licence propriétaire Palks Studio
-├── public_version/
-│   ├── .vscode/
-│   │   ├── settings.json        ← Exemple minimal (UTF-8, LF, marges visibles)
-│   │   ├── tasks.json           ← Structure uniquement (sans scripts)
-│   │   ├── keybindings.json     ← Raccourcis Alt+R et Alt+M
-│   │   └── launch.json          ← Optionnel : exécuter le fichier Python actif
-│   └── example_structure.txt    ← Arborescence complète du pack commercial
+VSCode_Pack_Formatage/ (Version lite)
+├── README.md
+│   ← Documentation publique de la version Lite
+│     (périmètre limité, aucune modification de fichiers)
+│
+├── LICENCE.txt
+│   ← Licence propriétaire – Palks Studio
+│
+├── version_publique/
+│   └── .vscode/
+│       ├── settings.json
+│       │   ← Réglages passifs de l’éditeur
+│       │     - UTF-8
+│       │     - fins de ligne LF
+│       │     - indentation visuelle (4 espaces)
+│       │     - affichage des marges
+│       │     - aucun formatage automatique
+│       │
+│       ├── keybindings.json
+│       │   ← Raccourci unique :
+│       │     Alt + M → afficher / masquer la minimap
+│       │
+│       └── tasks.json
+│           ← Tâche VS Code (lecture seule) :
+│             - Margin detection (read-only)
+│             - analyse des marges
+│             - aucun fichier modifié
+│
+├── example_structure.txt
+│   ← Aperçu de l’arborescence et des fonctionnalités
+│     de la version complète (Pro)
 │
 └── docs/
-    ├── images/
-    │   └── Palks_Studio.png     ← Image propriétaire (Palks Studio)
-    └── examples/                ← (Optionnel) Exemples avant/après détaillés
-        ├── before.py            ← Fichiers non structurés / “sales”
-        ├── after.py             ← Versions propres générées par le pack
-        ├── convert_lf.mp4       ← Conversion CRLF → LF automatique
-        ├── indent_clean.mp4     ← Indentation/marges cassées corrigées instantanément
-        ├── indent_python.mp4    ← Fichier Python mal indenté corrigé automatiquement
-        ├── backup.mp4           ← démontre le backup automatique à chaque sauvegarde (Ctrl+S) et la restauration d’un fichier supprimé
-        └── space_clean.mp4      ← Fichier analysé + marges nettoyées
+    └── images/
+        └── Palks_Studio.png
+            ← Visuel propriétaire (branding)
 ```
 
 
@@ -84,84 +85,122 @@ Les fichiers `.mp4` de ce dossier (convert_lf.mp4, indent_clean.mp4, etc.) sont 
 
 ---
 
-## Non inclus dans cette version (réservé à la version complète)
+## Ce que fait cette version Lite
 
-- `.vscode/extensions.json` — désactivation locale d’extensions (Prettier / RunOnSave)  
-- `settings.json` — version complète avec toutes les règles d’édition  
-- `keybindings.json` — ensemble complet des raccourcis  
-- `tasks.json` — tâches reliées aux scripts du pack  
-- `launch.json` — profils complets de débogage  
-- `clean.py` — nettoyage global du projet  
-- `convert.py` — conversion CRLF → LF dans tout l’espace de travail  
-- `space.py` — détection de marges ou lignes superflues  
-- `INSTALL.md` — guide d’installation et d’utilisation  
-- `README_COMMERCIAL.md` — présentation du produit  
-- `docs/README_TECHNIQUE.md` — notes techniques / maintenance  
-- Archives de distribution (`*.zip`, `*.tar.*`)
+- Applique des **réglages passifs de l’éditeur** pour garantir cohérence et lisibilité
 
----
+- Assure notamment :  
 
-## Utilisation rapide (Version d’aperçu)
+  - un encodage **UTF-8**  
+  - des fins de ligne en **LF**  
+  - une indentation visuelle (4 espaces)  
+  - l’affichage des espaces significatifs
 
-1. Extrait l’archive ZIP
+- Fournit une **tâche de détection des marges en lecture seule**  
+- Inclut un raccourci clavier minimal pour le confort de navigation  
 
-2. Copie le dossier `.vscode/` depuis `version_publique/` dans le projet de ton choix
-
-3. Ouvre le projet dans VS Code → les réglages de base sont actifs immédiatement
+Cette version est destinée **uniquement à l’évaluation et à la démonstration**.
 
 ---
 
-## Ce que tu obtiens dans la version complète
+## Ce que cette version Lite ne fait PAS
 
-- Scripts entièrement opérationnels :  
+- Aucun formatage de fichiers  
+- Aucun nettoyage des marges  
+- Aucune conversion des fins de ligne  
+- Aucune sauvegarde automatique  
+- Aucune action automatique à l’enregistrement  
+- Aucune transformation à l’échelle du projet
 
-  - `clean.py` → nettoie tous les fichiers (supprime les marges inutiles + supprime les lignes vides uniquement à partir de 3)  
-  - `convert.py` → convertit tous les CRLF en LF dans le projet  
-  - `space.py` → analyse en lecture seule (détecte marges inutiles, tabulations, lignes vides — sans modifier les fichiers)  
-  - `backup.py` → crée une sauvegarde horodatée automatique à chaque sauvegarde (Ctrl+S)  
-
-- Tâches VS Code configurées (prêtes à l’emploi)  
-- Installation en moins de 30 secondes  
-- Documentation complète : INSTALL, README technique, README commercial  
-- Exemples avant/après, vidéos de démonstration
-
-**Version complète disponible ici**  
-- Gumroad : https://palks.gumroad.com  
-- Itch.io : http://palks-studio.itch.io  
-- Ko-fi : https://ko-fi.com/palksstudio
-
-### Important — Comportement des scripts (version complète uniquement)
-
-Les scripts de formatage (`clean.py`, `convert.py`, `space.py`) ne modifient pas seulement le fichier ouvert dans l’éditeur, mais peuvent traiter l’ensemble des fichiers présents à la racine du projet, pour les extensions suivantes :
-
-| Script       | Comportement principal                                               |
-| ------------ | -------------------------------------------------------------------- |
-| `convert.py` | Convertit toutes les fins de ligne en **LF (Unix)**                  |
-| `space.py`   | Analyse les fichiers et détecte **marges inutiles / zones vides**    |
-| `clean.py`   | Supprime automatiquement **marges en trop et lignes vides inutiles** |
-| `backup.py`  | Crée une sauvegarde horodatée dans `.backups/` à chaque Ctrl+S       |
-
-Avant toute modification, un dossier `.backups/` est automatiquement créé.
-
-**À propos du formatage Python**
-Le formatage automatique Python via autopep8 ne fonctionne que si tu exécutes la tâche correspondante dans VS Code (Menu “Exécuter une tâche…”).
-Cette action ne s’applique qu’au fichier Python actuellement ouvert, jamais à l’ensemble du projet.
-
-**Reindentation manuelle (Ctrl + A puis Ctrl + R)**
-Applique une réindentation uniquement sur le fichier actif (`HTML`, `CSS`, `JS`, `JSON`, etc.)
-Exception : les fichiers `.py` ne sont pas réindentés par cette action — ils utilisent autopep8 à la place.
+Toute modification de fichiers est **réservée exclusivement à la version Pro**.
 
 ---
 
-## Compatibilité technique
+## Fonctionnalités incluses
 
-| Outil / Plateforme       | Supporté                |
-| ------------------------ | ----------------------- |
-| Visual Studio Code       | 1.90+                   |
-| Systèmes d’exploitation  | Windows / macOS / Linux |
-| Python installé          | Oui (requis)            |
-| Fonctionne sans Prettier | Oui                     |
-| Fonctionne hors ligne    | Oui                     |
+### Configuration passive de l’éditeur
+
+Le fichier `settings.json` applique des règles neutres et prévisibles :  
+
+- Aucun formatage automatique  
+- Aucun formateur imposé  
+- Aucune automatisation spécifique par langage  
+- Comportement identique sous Windows, macOS et Linux
+
+Ces réglages sont appliqués **uniquement au dossier du projet**.
+
+---
+
+### Détection des marges (lecture seule)
+
+Une seule tâche VS Code est disponible :  
+
+Terminal → Exécuter une tâche… → Détection des marges (lecture seule)
+
+Cette tâche :  
+
+- Analyse les fichiers à la recherche de problèmes de marges et d’espaces  
+- Affiche les résultats dans le terminal  
+- **Ne modifie jamais les fichiers**
+
+Elle permet **d’observer** les problèmes de formatage,
+sans chercher à les corriger.
+
+---
+
+### Raccourci clavier
+
+- `Alt + M` → Afficher / masquer la minimap
+
+Aucun raccourci de réindentation ou de formatage
+n’est inclus dans cette version Lite.
+
+---
+
+## Structure du pack
+
+La version Lite contient une configuration publique minimale :  
+
+- `.vscode/`  
+  - `settings.json` — réglages passifs de l’éditeur  
+  - `keybindings.json` — bascule de la minimap uniquement  
+  - `tasks.json` — détection des marges (lecture seule)
+
+- `example_structure.txt`  
+  - aperçu de la structure et des fonctionnalités de la version Pro
+
+- `docs/images/`  
+  - visuel propriétaire Palks Studio
+
+---
+
+## À propos de la version Pro
+
+La **version Pro** inclut notamment :  
+
+- le nettoyage des marges (`clean.py`)  
+- la normalisation des fins de ligne (`convert.py`)  
+- l’analyse et le reporting détaillés (`space.py`)  
+- les sauvegardes automatiques à l’enregistrement (`backup.py`)  
+- plusieurs modes d’exécution  
+  (global / fichier actif / sélection personnalisée)  
+- une documentation complète et des exemples réels d’utilisation
+
+La version Lite est volontairement limitée
+afin de maintenir une frontière claire et honnête.
+
+Cela garantit une expérience d’évaluation
+transparente et prévisible.
+
+---
+
+## Compatibilité
+
+- Visual Studio Code (versions récentes)  
+- Windows, macOS, Linux  
+- Aucune extension payante requise  
+- Aucun service externe utilisé  
+- Fonctionne entièrement hors ligne
 
 ---
 
@@ -185,5 +224,5 @@ Créateur indépendant d’outils digitaux utiles et autonomes.
 ## Signature
 
 **Palks Studio — Version 1.1**  
-Compatible with Visual Studio Code and Prettier
+Compatible avec Visual Studio Code (Prettier désactivé par défaut).
 
