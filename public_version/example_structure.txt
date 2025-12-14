@@ -19,7 +19,7 @@ VSCode_Formatting_Pack/
 ├── backup.py                           ← Timestamped backup of the file on save (Ctrl + S)
 │                                         via the Auto-Backup task
 │
-├── LICENCE.txt                         ← Proprietary license (Palks Studio)
+├── LICENCE_EN.md                       ← Proprietary license (Palks Studio)
 ├── INSTALL.md                          ← Installation and usage guide
 ├── README_COMMERCIAL.md                ← Product commercial overview
 │
