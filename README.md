@@ -201,4 +201,6 @@ This ensures a transparent and predictable evaluation experience.
 **Palks Studio — Version 1.1**  
 Compatible with Visual Studio Code (Prettier disabled by default).
 
+- https://palks-studio.com
+
 © Palks Studio — see LICENSE_EN.md
