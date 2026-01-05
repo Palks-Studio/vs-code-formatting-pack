@@ -81,14 +81,11 @@ The `.mp4` files in this folder (convert_lf.mp4, indent_clean.mp4, etc.) are int
 ## What this Lite version does
 
 - Applies **passive editor settings** for consistency and readability  
-
 - Ensures:  
-
   - UTF-8 encoding  
   - LF line endings  
   - Visual indentation (4 spaces)  
-  - Visible whitespace boundaries
-
+  - Visible whitespace boundaries  
 - Provides a **read-only margin detection task**  
 - Includes a minimal keyboard shortcut for navigation comfort
 
@@ -194,5 +191,5 @@ This ensures a transparent and predictable evaluation experience.
 **Palks Studio — Version 1.1**  
 Compatible with Visual Studio Code (Prettier disabled by default).
 
-© Palks Studio — see LICENSE.md
+© Palks Studio — see LICENSE.md  
 - https://palks-studio.com
