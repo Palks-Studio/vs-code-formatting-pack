@@ -13,14 +13,6 @@
   <a href="https://palks.gumroad.com/" target="_blank">
     <img src="https://img.shields.io/badge/Download%20on-Gumroad-orange?style=for-the-badge" alt="Download on Gumroad">
   </a>
-  &nbsp;&nbsp;
-  <a href="http://palks-studio.itch.io" target="_blank">
-    <img src="https://img.shields.io/badge/Available%20on-Itch.io-blue?style=for-the-badge" alt="Available on Itch.io">
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://ko-fi.com/palksstudio" target="_blank">
-    <img src="https://img.shields.io/badge/Buy%20on-Ko%E2%80%93fi-ff5f5f?style=for-the-badge" alt="Buy on Ko-fi">
-  </a>
 </p>
 
 # VS Code Formatting Pack (Lite Version)
