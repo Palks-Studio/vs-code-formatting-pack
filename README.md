@@ -19,6 +19,9 @@
 
 # VS Code – Formatting Pack
 
+> This repository is a technical presentation and documentation repository.  
+> It does not contain downloadable source code or production files.
+
 A **configured working environment** for Visual Studio Code.
 
 This pack provides a clear and consistent framework for formatting, cleanup, and normalization  
