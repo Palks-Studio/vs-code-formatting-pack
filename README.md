@@ -39,6 +39,23 @@ regardless of the operating system.
 
 ---
 
+## Why this environment exists
+
+Most editors automatically reformat code when saving files.  
+While convenient, this can introduce unexpected changes,  
+inconsistent formatting, or conflicts between extensions.
+
+This pack takes the opposite approach:  
+
+- no automatic formatting  
+- no hidden actions  
+- manual tools executed only when needed
+
+The goal is to keep code stable, readable and predictable,  
+while giving full control to the developer.
+
+---
+
 ## Pack Structure
 
 ```
@@ -101,6 +118,9 @@ vscode_formatting_pack_V1.1/
 ---
 
 ## What’s new in version 1.1
+
+The following section describes the technical configuration in detail.  
+Most users can use the environment without reading this part.
 
 ### Three execution modes for scripts
 
@@ -434,6 +454,18 @@ while keeping full control over the applied changes.
 - Compatible with VS Code **Settings Sync**  
 - Suitable for both **individual** and **collaborative** use  
 (shared workspaces)
+
+---
+
+## Typical workflow
+
+1. Open your project in VS Code  
+2. Work normally and save files (Ctrl + S)  
+3. Backups are created automatically  
+4. Run cleaning or conversion tasks only when needed  
+   (Terminal → Run Task…)
+
+Nothing runs automatically unless you decide to run it.
 
 ---
 
